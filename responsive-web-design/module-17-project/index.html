@@ -1,0 +1,58 @@
+<!-- Certification Project: Product Landing Page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>freeCodeCamp - Product</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="Logo - FreeCodeCamp" />
+
+      <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-link" href="#section-cover">Cover</a>
+          </li>
+
+          <li>
+            <a class="nav-link" href="#section-product">Product</a>
+          </li>
+
+          <li>
+            <a class="nav-link" href="#section-form">Form</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="section-cover">
+      <h2>freeCodeCamp</h2>
+      <img src="https://www.freecodecamp.org/news/content/images/size/w2000/2020/01/freecodecamp.jpeg" alt="About freeCodeCamp - Frequently Asked Questions" />
+      <p>freeCodeCamp is a community of people around the world who are learning to code together. We're a 501(c)(3) public charity.</p>
+    </section>
+
+    <section id="section-product">
+      <h2>Video</h2>
+
+      <div id="video-container">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/nw1pYut69yQ?si=0sJzYH97sPt3vn0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="section-form">
+      <h2>Contact Us!</h2>
+
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+        <div>
+          <label for="email">Email:</label>
+          <input id="email" type="email" name="email" placeholder="email" required />
+          <input id="submit" type="submit" value="Submit" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

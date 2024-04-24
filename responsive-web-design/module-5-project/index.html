@@ -1,0 +1,124 @@
+<!-- Certification Project: Survey Form -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Comunidad de Metroid</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1 id="title">Fan de Metroid</h1>
+        <p id="description">Únete a la mejor comunidad en Nezahualcóyotl</p>
+      </header>
+
+      <form id="survey-form">
+        <fieldset>
+          <legend>Información personal:</legend>
+
+          <div class="form-group">
+            <label id="name-label" for="name">Nombre:</label>
+            <input id="name" type="text" placeholder="Samus Aran" required />
+          </div>
+
+          <div class="form-group">
+            <label id="email-label" for="email">Correo electrónico:</label>
+            <input id="email" type="email" placeholder="samus@aran.com" required />
+          </div>
+
+          <div class="form-group">
+            <label id="number-label" for="number">Edad:</label>
+            <input id="number" type="number" min="15" max="120" pattern="[0-9]" placeholder="20" />
+          </div>
+        </fieldset>
+
+        <hr />
+
+        <fieldset>
+          <legend>Facción favorita:</legend>
+
+          <select id="dropdown" required>
+            <option value="">Selecciona tu facción</option>
+            <option value="Federación Galáctica">Federación Galáctica</option>
+            <option value="Pirata Espacial">Pirata Espacial</option>
+            <option value="Cazarrecompensas">Cazarrecompensas</option>
+          </select>
+        </fieldset>
+
+        <hr />
+
+        <fieldset>
+          <legend>Título principal favorito:</legend>
+
+          <div class="form-group">
+            <input id="metroid" type="radio" name="videogame" value="Metroid - 1986" checked />
+            <label for="metroid">Metroid - 1986</label>
+          </div>
+
+          <div class="form-group">
+            <input id="metroid-ii" type="radio" name="videogame" value="Metroid II: Return of Samus - 1991" />
+            <label for="metroid-ii">Metroid II: Return of Samus - 1991</label>
+          </div>
+
+          <div class="form-group">
+            <input id="metroid-iii" type="radio" name="videogame" value="Super Metroid - 1994" />
+            <label for="metroid-iii">Super Metroid - 1994</label>
+          </div>
+
+          <div class="form-group">
+            <input id="metroid-iv" type="radio" name="videogame" value="Metroid Fusion - 2002" />
+            <label for="metroid-iv">Metroid Fusion - 2002</label>
+          </div>
+
+          <div class="form-group">
+            <input id="metroid-i-remake" type="radio" name="videogame" value="Metroid: Zero Mission - 2004" />
+            <label for="metroid-i-remake">Metroid: Zero Mission - 2004</label>
+          </div>
+
+          <div class="form-group">
+            <input id="metroid-ii-remake" type="radio" name="videogame" value="Metroid: Samus Returns - 2017" />
+            <label for="metroid-ii-remake">Metroid: Samus Returns - 2017</label>
+          </div>
+
+          <div class="form-group">
+            <input id="metroid-v" type="radio" name="videogame" value="Metroid Dread - 2021" />
+            <label for="metroid-v">Metroid Dread - 2021</label>
+          </div>
+        </fieldset>
+
+        <hr />
+
+        <fieldset>
+          <legend>Serie(s) favorita(s):</legend>
+
+          <div class="form-group">
+            <input id="metroid-main" type="checkbox" name="metroid-main" value="Serie principal" checked />
+            <label for="metroid-main">Principal</label>
+          </div>
+
+          <div class="form-group">
+            <input id="metroid-prime" type="checkbox" name="metroid-prime" value="Serie Prime" />
+            <label for="metroid-prime">Prime</label>
+          </div>
+
+          <div class="form-group">
+            <input id="metroid-spin-offs" type="checkbox" name="metroid-spin-offs" value="Serie Spin Off" />
+            <label for="metroid-spin-offs">Spin Offs</label>
+          </div>
+        </fieldset>
+
+        <hr />
+
+        <fieldset>
+          <legend>Información adicional:</legend>
+          <textarea placeholder="Información adicional"></textarea>
+        </fieldset>
+
+        <button id="submit" type="submit">ENVIAR</button>
+      </form>
+    </main>
+  </body>
+</html>
